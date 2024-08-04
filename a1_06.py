@@ -1,6 +1,4 @@
-n= int((input("ENTER A NUMBER: ")))
+n=(input("ENTER A NUMBER: "))
 
-for i in range(4,0,-1):
-    n= n%(10**i)
-    print(n)
-
+for i in range(len(n)):
+    print(n[i:])
