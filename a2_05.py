@@ -1,20 +1,18 @@
 p = int(input("Enter a number:  "))
 i = int(input("Enter another number:  "))
-gcd = 1
+gcd = 0
+
 if p>i:
-    gcd = p%i 
-    while gcd!=0:
-        gcd  = p%i
-        p = i
-        i = gcd
-elif p<i:
-    gcd = i%p
-    while gcd!=0:
-        gcd  = i%p
-        i = p
-        p = gcd
+    for k in range(1,p):
+        if p%k == 0 and i%k == 0:
+            gcd = k
+
+elif i>p:
+    for k in range(1,i):
+        if p%k == 0 and i%k == 0:
+            gcd = k
 
 else:
-    print("The GCD: 1")
+    print("No GCD")
 
 print("The GCD is :  ",gcd)
