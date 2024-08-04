@@ -20,5 +20,7 @@ elif b>a and b>c:
 else:
     if a>b:
         print("The ascending order is: ",b,a,c)
+    else:
+        print("The ascending order is: ",a,b,c)
         
         
