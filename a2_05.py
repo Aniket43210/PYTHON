@@ -1,6 +1,6 @@
 p = int(input("Enter a number:  "))
 i = int(input("Enter another number:  "))
-gcd = 0
+gcd = 1
 if p>i:
     gcd = p%i 
     while gcd!=0:
