@@ -21,5 +21,5 @@ for i in s:
     elif i == 'u' or i == 'U':
         c_u+=1
 
-print(f"Total no. of vowels are:\na = {c_a}\ne = {c_e}\ni = {c_i}\no = {c_o}\nu = {c_u}")
+print(f"Total no. of vowels are: {c_a+c_e+c_o+c_i+c_u}")
 
